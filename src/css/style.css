@@ -1,0 +1,152 @@
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(..//image/bg-repeat.jpg);
+    background-size: contain;
+    padding: 50px;
+    height: 100%;
+}
+
+.container .conteudo-texto {
+    margin-right: 100px;
+}
+
+.container .conteudo-texto .pergunta {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.container .conteudo-texto .texto-info {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-right: 40px;
+    width: 530px;
+}
+
+.container .container-form {
+    background-color: #fff;
+}
+
+.container .container-form .form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 378px;
+}
+
+.container .container-form .form .input-form {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.container .container-form .form textarea.input-form {
+    resize: none;
+    margin-bottom: 0;
+}
+
+.container .container-form .form .campo-obrigatorio {
+    margin-top: -16px;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #f52e2e;
+    opacity: 0;
+}
+.container .container-form .form .campo-obrigatorio.ativo {
+    opacity: 1;
+}
+
+.container .container-form .form .input-form.alerta {
+    border: 1px solid #f52e2e;
+}
+.container .container-form .form .campo-obrigatorio.mensagem {
+    margin-top: 0;
+}
+
+.container .container-form .form .input-form.borda-verde {
+    border: 1px solid #00c22b;
+}
+
+.container .container-form .form .aviso {
+    font-size: 15px;
+    /* margin-top: 7px; */
+    margin-bottom: 20px;
+}
+
+.container .container-form .form button {
+    border: none;
+    border-radius: 5px;
+    background-color: #3ccc87;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        padding: 20px;
+    }
+
+    .container .conteudo-texto {
+        margin: 0 30px;
+        padding: 10px;
+    }
+
+    .container .conteudo-texto .pergunta {
+        font-size: 20px;
+    }
+
+    .container .conteudo-texto .pergunta:nth-child(2) {
+        margin-bottom: 20px;
+    }
+    .container .conteudo-texto .texto-info {
+        font-size: 16px;
+        display: inline;
+    }
+
+    .container .container-form {
+        margin: 12px 30px;
+    }
+
+    .container .container-form .form {
+        width: 100%;
+    }
+
+    .container .container-form .form .input-form {
+        margin-bottom: 6px;
+        padding: 7px;
+        font-size: 10px;
+    }
+
+    .container .container-form .form .campo-obrigatorio {
+        margin-top: -5px;
+        font-size: 10px;
+    }
+
+    .container .container-form .form .aviso {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .container .container-form .form button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

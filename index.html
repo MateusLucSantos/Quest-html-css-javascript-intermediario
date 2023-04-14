@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+        <link rel="stylesheet" href="./src/css/reset.css" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="conteudo-texto">
+                <h1 class="pergunta">Ficou com dúvida?</h1>
+                <h1 class="pergunta">Nos mande uma mensagem!</h1>
+                <p class="texto-info">
+                    caso tenha ficado com qualquer dúvida basta nos mandar uma
+                    mensagem e entraremos em contato em menos de 24h.
+                </p>
+            </div>
+            <div class="container-form">
+                <form class="form">
+                    <input
+                        class="input-form"
+                        type="text"
+                        placeholder="Nome completo *"
+                    />
+                    <label for="" class="campo-obrigatorio"
+                        >*campo obrigatório</label
+                    >
+                    <input
+                        class="input-form"
+                        type="text"
+                        placeholder="Email*"
+                    />
+                    <label for="" class="campo-obrigatorio"
+                        >*campo obrigatório</label
+                    >
+                    <input
+                        class="input-form"
+                        type="text"
+                        placeholder="Telefone *"
+                    />
+                    <label for="" class="campo-obrigatorio"
+                        >*campo obrigatório</label
+                    >
+                    <textarea
+                        class="input-form"
+                        placeholder="Mensagem *"
+                        cols="30"
+                        rows="4"
+                    ></textarea>
+                    <label for="" class="campo-obrigatorio mensagem"
+                        >*campo obrigatório</label
+                    >
+                    <label for="" class="aviso">*campos obrigatórios</label>
+                    <button type="submit" class="btn-form">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <script src="./src/js/formulario.js"></script>
+    </body>
+</html>
